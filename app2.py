@@ -55,3 +55,51 @@ d = ([7,8,9],[10,11,12])
 np.concatenate((c,d),axis=0) # Merge vertically
 
 np.concatenate((c,d),axis=1) # Merge horizontally
+
+
+import numpy as np
+
+
+a = np.array([1,3,34,5])
+
+b = np.arange(4)
+b
+
+c = a + b
+
+c > 50
+
+
+a = a + 10
+
+a
+
+
+x = np.random.random(12)
+x.max()
+x.sum()
+
+
+d = np.arange(15).reshape(3,5)
+
+d[0:1].sum() #1.satırı topla
+d.sum(axis = 0) # yatay toplar
+
+
+d[0:3,1]
+d
+d[0:3,1]
+
+
+e =d.cumsum(axis = 1)
+e
+
+d.mean() 
+
+g = np.median(d)
+
+g = np.std(d)  #standart sapma
+g
+
+h = np.var(d)
+h
